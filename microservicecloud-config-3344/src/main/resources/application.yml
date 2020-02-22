@@ -1,0 +1,12 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ChenBin113/microservicecloud-config.git #GitHub上面的git仓库名字
+#建议使用https这种方式，SSH方式一直出错，可能与本地git配置有关
